@@ -1,0 +1,145 @@
+body {
+  font-size: 100%;
+  font-family: 'DM Serif Text', serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  line-height: 1em;
+  align-items: center;
+  height: 100vh;
+}
+
+.myName {
+  font-size: 10vw;
+  min-width: 100%;
+  line-height: 1em;
+  font-weight: 400;
+  color: #32383c;
+  margin: 0;
+  background-image: linear-gradient(#32383c, #32383c), linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+.myName:hover{
+  background-size: 100% 2px, auto;
+}
+
+.commitment {
+  font-size: 2.5vw;
+}
+
+.commitment p {
+  display: inline-block;
+  white-space: pre;
+  color: #32383c;
+}
+
+.Typewriter {
+  display: inline-block;
+  color: #006666;
+}
+
+.myProjects {
+  margin: -20vh;
+  color: #32383c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.myProjects h1 {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.backgroundName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50vh;
+  line-height: 1em;
+  font-weight: 400;
+  color: rgba(50, 56, 60, .05);
+  margin: 0;
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.foregroundName {
+  position: absolute;
+  line-height: .95em;
+  font-size: 20vh;
+  margin: 0;
+  top: 30%;
+  left: 25%;
+  z-index: 0;
+  color: #9dbcbc;
+  font-weight: 100;
+}
+
+.linksTitle {
+  width: 100vw;
+  text-align: center;
+}
+
+.links {
+  width: 100vw;
+  text-align: center;
+}
+
+
+.button {
+  color: #006666;
+  display: inline-block;
+  padding: 1em;
+  background-image: linear-gradient(#9dbcbc, #006666), linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+  padding: .5em;
+  cursor: pointer;
+  margin-inline: 1em;
+  text-decoration: none;
+}
+
+.socials {
+  position: absolute;
+  margin: 1em;
+  right: 0;
+}
+
+.socialIcons {
+  color: #006666;
+  margin-inline: 0.1em;
+  font-size: 2.5vw;
+  background-color: transparent;
+  transition: all ease-in .3s;
+  cursor: pointer;
+}
+
+.socials svg {
+  min-width: 4vw;
+  min-height: 3.5vh;
+}
+
+.socialIcons:hover {
+  color: #9dbcbc;
+}
+
+.button:hover{
+  background-size: 100% 2px, auto;
+}
+
