@@ -46,9 +46,10 @@ function About() {
     const handleEmailChange = (e) => {setEmail(e.target.value);};
     const handleMessageChange = (e) => {setMessage(e.target.value);};
     const handleSubmit = (e) => {
+        console.log(process.env.REACT_APP_PUBLIC_KEY);
         console.log(formRef.current);
         e.preventDefault();
-        emailjs.sendForm('service_twottgs', 'template_eyr9p1i', formRef.current, process.env.PUBLIC_KEY)
+        emailjs.sendForm('service_twottgs', 'template_eyr9p1i', formRef.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((res) => {
                 toast.success('Thanks for reaching out! I will get back to you soon!');
                 setName('');
