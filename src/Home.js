@@ -40,9 +40,9 @@ function Home() {
           <BsLinkedin className="socialIcons" />
         </a>
       </div>
-     <div className="container"><div className='mainInfo'>
-        <h1 className='myName' onClick={() => navigate('/about')}>Martin<br />McCarthy</h1>
-        {/* <h1 className='foregroundName'>Martin<br />McCarthy</h1> */}
+    <div className="container">
+      <div className='mainInfo'>
+        <h1 className='myName'>Martin<br />McCarthy</h1>
         <h1 className='backgroundName'>Martin<br />McCarthy</h1>
         <div className="commitment">
           <p>Commited to </p>
@@ -55,9 +55,11 @@ function Home() {
           }}/>
         </div>
       </div>
+      <div className="aboutMeLink">
+          <p className="button" onClick={() => navigate('/about')}>Learn more about me and my capabilities here.</p>
       </div>
       <div className='myProjects'>
-        <h1 className='linksTitle'>Learn more about some of my projects here:</h1>
+        <h1 className='linksTitle'>Check out my projects!</h1>
         <div className='links'>
           <p className="button" onClick={() => openModal({projectName: "Make-A-Date", projectDescription: descriptions.makeADateDesc, githubLink: "https://github.com/martinmccarthy/MakeADate", websiteLink: "", projectImage: "/makeadate.png"})}>Make-A-Date</p>
           <p className="button" onClick={() => openModal({projectName: "NHL Be a GM", projectDescription: descriptions.nhlDesc, githubLink: "https://github.com/martinmccarthy/NHL-Franchise/tree/master/frontend", websiteLink: "https://hockeymanager.co/", projectImage:"/nhlfranchise.png"})}>NHL Franchise Mode</p>
@@ -66,6 +68,8 @@ function Home() {
           <p className="button" onClick={() => openModal({projectName: "VR Application", projectDescription: descriptions.vrDesc, websiteLink:"https://www.youtube.com/playlist?list=PLpUbIdgRdlCVoo5bi7l-MxecuUBXy9HSj", projectImage: "/vrapp.png"})}>VR Application</p>
         </div>
       </div>
+
+    </div>
       {modalOpen && <Modal project={modalProject} closeModal={closeModal} />  }
     </div>
   );

@@ -1,11 +1,14 @@
+html {
+  overflow: hidden;
+}
+
 body {
   font-size: 100%;
   font-family: 'DM Serif Text', serif;
   background-color: #fff;
   overflow: hidden;
-  height: -webkit-fill-available;
-  overflow: hidden;
-  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .container {
@@ -14,6 +17,12 @@ body {
   line-height: 1em;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mainInfo {
+  margin-top: 10vh;
 }
 
 .myName {
@@ -28,11 +37,8 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   transition: all .2s ease-out;
-  cursor: pointer;
 }
-.myName:hover{
-  background-size: 100% 2px, auto;
-}
+
 
 .commitment {
   font-size: 2.5vw;
@@ -50,7 +56,6 @@ body {
 }
 
 .myProjects {
-  margin: -20vh;
   color: #32383c;
   display: flex;
   justify-content: center;
@@ -61,6 +66,12 @@ body {
 .myProjects h1 {
   font-size: 1em;
   font-weight: 200;
+}
+
+.aboutMeLink {
+  font-size: .8em;
+  margin-bottom: 10vh;
+  margin-top: 0;
 }
 
 .backgroundName {
@@ -83,11 +94,10 @@ body {
 .foregroundName {
   position: absolute;
   line-height: .95em;
-  font-size: 20vh;
+  font-size: 10vw;
   margin: 0;
-  top: 30%;
-  left: 25%;
-  z-index: 0;
+  top: 21%;
+  z-index: -1;
   color: #9dbcbc;
   font-weight: 100;
 }
