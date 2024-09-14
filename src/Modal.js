@@ -11,7 +11,7 @@ function Modal(props) {
                     <h1>{props.project.projectName} {props.project.githubLink &&
                         <a target="_blank" href={props.project.githubLink}>
                             <BsGithub className="modalIcons" />
-                        </a>}{props.project.websiteLink.length > 0 && 
+                        </a>}{props.project.websiteLink && 
                         <a target="_blank" href={props.project.websiteLink}>
                             <FaExternalLinkSquareAlt className="modalIcons"/>
                         </a>}

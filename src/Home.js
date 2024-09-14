@@ -61,11 +61,11 @@ function Home() {
       <div className='myProjects'>
         <h1 className='linksTitle'>Check out my projects!</h1>
         <div className='links'>
-          <p className="button" onClick={() => openModal({projectName: "Make-A-Date", projectDescription: descriptions.makeADateDesc, githubLink: "https://github.com/martinmccarthy/MakeADate", websiteLink: "", projectImage: "/makeadate.png"})}>Make-A-Date</p>
-          <p className="button" onClick={() => openModal({projectName: "NHL Be a GM", projectDescription: descriptions.nhlDesc, githubLink: "https://github.com/martinmccarthy/NHL-Franchise/tree/master/frontend", websiteLink: "https://hockeymanager.co/", projectImage:"/nhlfranchise.png"})}>NHL Franchise Mode</p>
-          <p className="button" onClick={() => openModal({projectName: "Skatle", projectDescription: descriptions.skatleDesc, githubLink:"https://github.com/martinmccarthy/skatle", websiteLink: "", projectImage:""})}>Skatle</p>
+          <p className="button" onClick={() => openModal({projectName: "Slasher Roblox", projectDescription: descriptions.slasherDesc, websiteLink: "https://www.roblox.com/games/5982131103/Slasher", projectImage: "/slasher.png"})}>Slasher Roblox</p>
+          <p className="button" onClick={() => openModal({projectName: "Dynasty Hockey", projectDescription: descriptions.nhlDesc, githubLink: "https://github.com/martinmccarthy/NHL-Franchise/tree/master/frontend", websiteLink: "https://hockeymanager.co/", projectImage:"/nhlfranchise.png"})}>Dynasty Hockey</p>
           <p className="button" onClick={() => openModal({projectName: "BrainBeats", projectDescription: descriptions.brainBeatsDesc, githubLink: "https://github.com/Brainbeats-v4/BrainBeatsv4/tree/new-frontend", websiteLink: "https://brainbeatz.xyz", projectImage:"/brainbeats.png"})}>BrainBeats</p>
-          <p className="button" onClick={() => openModal({projectName: "VR Application", projectDescription: descriptions.vrDesc, websiteLink:"https://www.youtube.com/playlist?list=PLpUbIdgRdlCVoo5bi7l-MxecuUBXy9HSj", projectImage: "/vrapp.png"})}>VR Application</p>
+          <p className="button" onClick={() => openModal({projectName: "Intergalactic Delivery Service", projectDescription: descriptions.intergalaticDesc, websiteLink: "https://www.youtube.com/watch?v=YL7B_1RhOIQ", projectImage:"/intergalatic.png"})}>Intergalactic Delivery Service</p>
+          <p className="button" onClick={() => openModal({projectName: "Jedi Trainer VR", projectDescription: descriptions.vrDesc, websiteLink:"https://www.youtube.com/watch?v=5e0nU4RbJsI", githubLink: "https://github.com/elegs99/JediTrainer_3DUI_Proj1", projectImage: "/starwars.png"})}>Jedi Trainer VR</p>
         </div>
       </div>
 

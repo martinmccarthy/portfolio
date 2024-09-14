@@ -1,5 +1,5 @@
-import { FaJava, FaSalesforce, FaReact, FaUnity, FaNodeJs } from "react-icons/fa";
-import { SiJavascript, SiPython, SiC, SiMongodb, SiMysql, SiHaskell, SiTypescript, SiPhp, SiExpress, SiPrisma } from "react-icons/si";
+import { FaJava, FaSalesforce, FaReact, FaUnity, FaNodeJs, FaPython } from "react-icons/fa";
+import { SiJavascript, SiPython, SiC, SiMongodb, SiMysql, SiHaskell, SiTypescript, SiPhp, SiExpress, SiPrisma, SiUnrealengine, SiRoblox, SiOculus, SiCsharp } from "react-icons/si";
 import { IoIosSchool, IoMdArrowBack } from 'react-icons/io';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
 import { GiBrain } from 'react-icons/gi'
@@ -14,6 +14,7 @@ import emailjs from '@emailjs/browser';
 import './About.css'
 import 'react-toastify/dist/ReactToastify.css';
 import "animate.css/animate.min.css";
+import { BsVr } from "react-icons/bs";
 
 function About() {
     const navigate = useNavigate();
@@ -92,7 +93,7 @@ function About() {
                     <div className="data" >
                         {expertiseShowing && <Typewriter options={{wrapperClassName: 'infoType', cursorClassName: 'infoCursor'}} onInit={typewriter => {
                             typewriter.changeDelay(50)
-                            .typeString('Experienced programmer in functional and object oriented programming languages.')
+                            .typeString('Experienced software developer specializing in Virtual Reality. Hobbyist game developer.')
                             .callFunction(() => {
                                 setFinishedTypingExpertise(true);
                             })
@@ -100,28 +101,16 @@ function About() {
                         }} />}
                     {finishedTypingExpertise && <div className="iconContainer">
                             <div className="icons">
-                                <SiJavascript className="icons"/>
+                                <FaUnity className="icons"/>
                             </div>
                             <div className="icons">
-                                <SiPython className="icons" />
+                                <SiUnrealengine className="icons" />
                             </div>
                             <div className="icons">
-                                <SiC className="icons" />
+                                <SiOculus className="icons" />
                             </div>
                             <div className="icons">
-                                <FaJava className="icons"/>
-                            </div>
-                            <div className="icons">
-                                <TbBrandCSharp className="icons" />
-                            </div>
-                            <div className="icons">
-                                <SiHaskell className="icons" />
-                            </div>
-                            <div className="icons">
-                                <SiTypescript className="icons" />
-                            </div>
-                            <div className="icons">
-                                <SiPhp className="icons" />
+                                <SiRoblox className="icons"/>
                             </div>
                         </div>}
                     </div>
@@ -151,7 +140,7 @@ function About() {
                 <div className="data">
                 {developmentShowing && <Typewriter options={{wrapperClassName: 'infoType', cursorClassName: 'infoCursor'}} wrapperClassName="infoType" onInit={typewriter => {
                     typewriter.changeDelay(50)
-                    .typeString('Developer in many technologies, including frontend and backend development, databases and game engines.')
+                    .typeString('I\'ve created practical solutions with a variety of technologies.')
                     .callFunction(() => {
                         setFinishedTypingDevelopment(true);
                     })
@@ -172,7 +161,7 @@ function About() {
                             <SiMysql className="icons" />
                         </div>
                         <div className="icons">
-                            <FaUnity className="icons" />
+                            <FaPython className="icons" />
                         </div>
                         <div className="icons">
                             <FaNodeJs className="icons" />
@@ -181,7 +170,7 @@ function About() {
                             <SiExpress className="icons" />
                         </div>
                         <div className="icons">
-                            <SiPrisma className="icons" />
+                            <SiCsharp className="icons" />
                         </div>
                     </div>}
                 </div>
@@ -211,7 +200,7 @@ function About() {
                 <div className="data">
                     {educationShowing && <Typewriter options={{wrapperClassName: 'infoType', cursorClassName: 'infoCursor'}} onInit={typewriter => {
                         typewriter.changeDelay(50)
-                        .typeString('Bachelors in computer science from the University of Central Florida. Currently pursuing a masters at UCF.')
+                        .typeString('Masters in Computer Science from the University of Central Florida. Currently pursuing a PhD under Dr. Carolina Cruz-Neira.')
                         .callFunction(() => {
                             setFinishedTypingEducation(true);
                         })
@@ -244,7 +233,7 @@ function About() {
                         </div>
                         <div className="text">
                             <h1 className="aboutMeHeading">Who Am I?</h1>
-                            <p>Hi! I'm Martin, an accomplished computer science student and full stack developer at the University of Central Florida pursuing a Masters. With work experience as a software engineering intern and a teaching assistant for artificial intelligence, I am committed to leveraging my skills to create impactful solutions that promote sustainability and elevate user experiences.</p>
+                            <p>Hi! I'm Martin, an accomplished computer scientist and PhD candidate at the University of Central Florida. Currently researching virtual reality and digital twin technology.</p>
                         </div>
                     </div>
                     <div className="mainContainer">
